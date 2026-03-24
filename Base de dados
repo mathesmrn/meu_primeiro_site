@@ -85,7 +85,7 @@ start transaction;
 INSERT INTO Endereco (logra, cidade, numero, cep) VALUES
 ('Rua Gervasio Pires', 'Recife', 312, 50751000);
 
-
+rollback;
 commit;
 
 
