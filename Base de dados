@@ -91,6 +91,20 @@ INSERT INTO Endereco (logra, cidade, numero, cep) VALUES
 rollback;
 commit;
 
+#------------------------------------------------------------------
+
+select*from professor where id = 2;
+
+select*from professor where salario < 1200;
+
+select*from professor where nome like 'c%';
+
+select*from professor order by salario, freq desc;
+
+select count(salario) from professor;
+
+select nome, max(salario) as salario_medio from professor group by nome;
+
 #-----------------------------------------------------------
 
 
